@@ -1,6 +1,13 @@
 const express = require('express');
+const connectDB = require('./config/db');
 
 const app = express();
+
+//connect to MONGOdb
+connectDB();
+
+//initiate middlware to accept json data
+app.use(express.json({ extended : false }));
 
 app.get('/', (req, res) => {
     console.log("hello world");
