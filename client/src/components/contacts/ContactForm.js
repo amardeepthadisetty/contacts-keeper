@@ -26,7 +26,7 @@ const ContactForm = () => {
             });
 
         }
-    }, [contactContext, current ]);
+    }, [ current ]);
 
     const onChange = (e) => setContact({ ...contact, [e.target.name] : e.target.value });
 
