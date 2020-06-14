@@ -49,7 +49,7 @@ router.post('/', [
         const user = await User.findOne({ email });
 
         if (!user) {
-            return res.status(400).send({ msg: 'Invalid credentials' });
+            return res.status(400).send({ msg: 'Invalid Credentials' });
 
         }
         

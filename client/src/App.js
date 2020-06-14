@@ -15,6 +15,8 @@ import setAuthToken from './utils/setAuthToken';
 
 import PrivateRoute from './routing/PrivateRoute';
 
+
+
 if (localStorage.token) {
   setAuthToken(localStorage.token);
 }
@@ -22,6 +24,8 @@ if (localStorage.token) {
 
 
 const App = () => {
+ 
+
   return (
     <AuthState>
       <ContactState>

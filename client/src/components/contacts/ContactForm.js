@@ -35,6 +35,12 @@ const ContactForm = () => {
 
         if (current === null) {
             addContact(contact);
+            setContact({
+                name: '',
+                email: '',
+                phone: '',
+                type: 'personal'
+            });
         }else{
             updateContact(contact);
         }
